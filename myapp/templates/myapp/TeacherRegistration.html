@@ -1,0 +1,9 @@
+{%extends 'myapp/base.html'%}
+{%block content%}
+<legend style=color:maroon;>Welcome Teacher</legend>
+<form method="POST" action=''>
+  {%csrf_token%}
+  {{form}}
+  <button>Register</button>
+  </form>
+{%endblock%}
